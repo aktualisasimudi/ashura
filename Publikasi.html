@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="button" onclick="authenticate()">Login</button>
+    </form>
+
+    <script>
+        function authenticate() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            if (username === 'desember23' && password === 'publikasi') {
+                window.location.href = 'https://docs.google.com/spreadsheets/d/1xbS-vtQvsvj6S_zM3wt8aB2DqfUwZ9numFsODUktMfU/edit#gid=0';
+            } else {
+                alert('Username atau password yang Bapak/Ibu masukkan kurang tepat. Silahkan di ulang kembali.');
+            }
+        }
+    </script>
+
+</body>
+</html>
